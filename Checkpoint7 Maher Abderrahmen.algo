@@ -1,0 +1,35 @@
+ALGORITHM checkpoint_algorithm
+VAR
+    set_declarations
+i: INTEGER;
+word,len,vowel: INTEGER :=0;
+sentence : STRING :="";
+character : CHAR;
+
+BEGIN
+    
+    REPEAT
+        len +=1;
+        read(character);
+        sentence += character;
+    UNTIL (character == ".")
+    
+FOR i FROM 0 TO leng-1 STEP 1  DO
+    
+    IF (sentence [i]==" ") THEN
+        word +=1;
+    END_IF
+    SWITCH (sentence[i]) DO
+        case "a" : vowel +=1
+        case "e" : vowel +=1
+        case "i" : vowel +=1
+        case "o" : vowel +=1
+        case "u" : vowel +=1
+        case "y" : vowel +=1
+        
+    END_SWITCH
+END_FOR
+Write(len);
+Write(word);
+Write(vowel);
+END

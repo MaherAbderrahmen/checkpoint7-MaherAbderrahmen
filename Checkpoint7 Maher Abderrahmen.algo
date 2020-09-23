@@ -26,10 +26,16 @@ FOR i FROM 0 TO leng-1 STEP 1  DO
         case "o" : vowel +=1
         case "u" : vowel +=1
         case "y" : vowel +=1
+        case "A" : vowel +=1
+        case "E" : vowel +=1
+        case "I" : vowel +=1
+        case "O" : vowel +=1
+        case "U" : vowel +=1
+        case "Y" : vowel +=1
         
     END_SWITCH
 END_FOR
-Write(len);
-Write(word);
-Write(vowel);
+Write("The length of sentence is: ",len);
+Write("the number of words in the sentence is: ",word);
+Write("The number of vowels in the sentence is: ",vowel);
 END
